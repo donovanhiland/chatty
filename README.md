@@ -53,7 +53,7 @@ We will be going more in depth into exactly how `app.use()` works tomorrow, but 
 Now we can actually create our 'POST' endpoint. This will be structured very similarly to our 'GET' endpoint. Let's start off by simply console logging our `req.body`.
 ```javascript
 app.post('/', function( req, res ) {
-  console.log(req.body);
+  console.log(req.body.message);
 });
 ```
 Let's test this out in Postman.
